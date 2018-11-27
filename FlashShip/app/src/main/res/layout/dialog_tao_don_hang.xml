@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarShipper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/gradient2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tạo Đơn Hàng"
+                android:textColor="#000"
+                android:layout_gravity="center"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <EditText
+                    android:id="@+id/dialog_TenMonHang"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Tên Hàng"
+                    android:textColor="#000"
+                    android:background="@drawable/custom_edittext"
+                    android:paddingLeft="16dp"
+                    android:layout_marginTop="16dp"/>
+
+                <EditText
+                    android:id="@+id/dialog_txtHoten"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Tên Người Nhận"
+                    android:textColor="#000"
+                    android:background="@drawable/custom_edittext"
+                    android:paddingLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+                <EditText
+                    android:id="@+id/dialog_sdtNguoiNhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Số Điện Thoại Người Nhận"
+                    android:textColor="#000"
+                    android:background="@drawable/custom_edittext"
+                    android:paddingLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/dialog_DiaChiNguoiNhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Địa Chỉ Người Nhận"
+                    android:textColor="#000"
+                    android:background="@drawable/custom_edittext"
+                    android:paddingLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+                <Button
+                    android:id="@+id/btnXacNhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Xác Nhận"
+                    android:textColor="#000"
+                    android:background="@drawable/custom_btnlogin"/>
+
+            </LinearLayout>
+
+    </ScrollView>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+</LinearLayout>
